@@ -39,5 +39,5 @@ else
   ${NINJA}
 fi
 
-cp ${BUILDDIR}/backends.cpython-37m-darwin.so python/
+cp backends.cpython-37m-darwin.so ../../python/
 popd

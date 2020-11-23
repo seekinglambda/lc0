@@ -12,3 +12,4 @@ src/.vs/
 testdata/
 xcuserdata
 subprojects/packagecache/*
+*.so

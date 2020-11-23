@@ -60,6 +60,11 @@ class BlasComputation : public NetworkComputation {
   // Returns how many times AddInput() was called.
   int GetBatchSize() const override { return static_cast<int>(planes_.size()); }
 
+
+  std::vector<float> GetValues(int sample) const override {
+    std::vector<float> vec;
+    return vec;
+  }
   // Returns Q value of @sample.
   float GetQVal(int sample) const override {
     if (wdl_) {

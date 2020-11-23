@@ -60,7 +60,7 @@ void dumpTensor(void *memory, int elements, const char *message, bool fp16 = fal
     for (int i = 0; i < elements; i++)
     {
         float val;
-        if (fp16) 
+        if (fp16)
         {
             half *arr = (half*)temp;
             val = (float)arr[i];
@@ -270,11 +270,11 @@ class CudnnNetwork : public Network {
               "Please consider using a smaller network.";
       use_custom_winograd_ = false;
     }
-    
+
     // Override if set in backend-opts.
     if (custom_winograd_override)
       use_custom_winograd_ = options.Get<bool>("custom_winograd");
-    
+
     if (use_custom_winograd_ &&
         transformed_residual_weight_size > 0.4 * deviceProp.totalGlobalMem) {
       CERR << "WARNING: Low GPU video memory. You may still run into OOM "

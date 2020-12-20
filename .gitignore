@@ -13,3 +13,5 @@ testdata/
 xcuserdata
 subprojects/packagecache/*
 *.so
+*.pgn
+*.pb.gz
